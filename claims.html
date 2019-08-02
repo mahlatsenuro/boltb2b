@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Claims | Integrated E-Commerce</title>
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/unifilter.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+</head> 
+<body class="header_sticky header-style-2 topbar-style-2 topbar-width-94 topbar-divider has-menu-extra">
+    <div class="boxed">
+        <div id="site-header-wrap">
+            <div id="top-bar">
+                <div id="top-bar-inner" class="container-fluid container-width-94">
+                    <div class="top-bar-inner-wrap ">
+
+                        <div class="top-bar-left">
+                            <ul class="language style2">
+                                <li class="border-menu">
+                                    <a href="#">Manage</a>
+                                </li>
+                                <li class="border-menu">
+                                    <a href="#">Download</a>
+                                </li>
+                                <li>
+                                    <a href="#">Administrator</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="top-bar-nav">
+                            <div class="inner">
+                                <span class="account"><i class="fa fa-user"></i><a href="#">Contact Us</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        <header id="header" class="header clearfix">
+            <div class="container-fluid clearfix container-width-93" id="site-header-inner">
+                <div id="logo" class="logo float-left">
+                    <a href="/" title="logo">
+                        <img src="images/wholesalerlogo.png" class="logo" alt="logo">
+                    </a>
+                </div>
+                <div class="mobile-button"><span></span></div>
+                <ul class="menu-extra">
+                    <li class="box-search">
+                        <a class="icon_search header-search-icon" href="#"></a>
+                        <form role="search" method="get" class="header-search-form" action="#">
+                            <input type="text" value="" name="s" class="header-search-field" placeholder="Search...">
+                            <button type="submit" class="header-search-submit" title="Search">Search</button>
+                        </form>
+                    </li>
+                    <li class="box-login">
+                        <a class="icon_login" href="#"></a>
+                    </li>
+                    <li class="box-cart nav-top-cart-wrapper">
+                        <a class="icon_cart nav-cart-trigger active" href="#"><span>3</span></a>
+                        <div class="nav-shop-cart">
+                            <div class="widget_shopping_cart_content">
+                                <div class="woocommerce-min-cart-wrap">
+                                    <ul class="woocommerce-mini-cart cart_list product_list_widget ">
+                                        <li class="woocommerce-mini-cart-item mini_cart_item">
+                                            <span>No Items in Shopping Cart</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="nav-wrap new-menu">
+                    <nav id="mainnav" class="mainnav">
+                        <ul class="menu">
+                            <li>
+                                <a href="index.html">HOME</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <section class="flat-row shop-detail-content">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-12">
+                        <h2 class="pb-1">
+                            Start a New Claim
+                            <small class="text-muted font-14">I know my claim type</small>
+                        </h2>
+                        <p class="pb-4">Please select one:</p>
+        				<div class="flat-tabs style-1 has-border mb-5">
+        					<div class="inner">
+        						<ul class="menu-tab">
+        							<li class="active">Issue with invoice</li>
+                                    <li>Issue with order delivery</li>
+        							<li>Damaged or poor quality product</li>
+        							<li>Returning product per sales agreement</li>
+        						</ul>
+        						<div class="content-tab">
+        							<div class="content-inner">
+    									<div class="inner">
+                                            <ul class="nav nav-pills pt-2 pl-5" id="pills-tab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Wrong wholesale price</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Wrong discount</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Missing closeout discount</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-vat" role="tab" aria-controls="pills-contact" aria-selected="false">Wrong VAT</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content pt-3" id="pills-tabContent" style="padding-left: 60px">
+                                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h3 class="pt-3 pb-2">CREDIT REQUEST</h3>
+                                                            <p>Wrong wholesale price</p>
+                                                        </div>
+                                                        <div class="col-md-6 pt-4">
+                                                            <a href="#" class="btn pose-btn">Confirm</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h3 class="pt-3 pb-2">CREDIT REQUEST</h3>
+                                                            <p>Wrong discount</p>
+                                                        </div>
+                                                        <div class="col-md-6 pt-4">
+                                                            <a href="#" class="btn pose-btn">Confirm</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h3 class="pt-3 pb-2">CREDIT REQUEST</h3>
+                                                            <p>Missing closeout discount</p>
+                                                        </div>
+                                                        <div class="col-md-6 pt-4">
+                                                            <a href="#" class="btn pose-btn">Confirm</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-vat" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h3 class="pt-3 pb-2">CREDIT REQUEST</h3>
+                                                            <p>Wrong VAT</p>
+                                                        </div>
+                                                        <div class="col-md-6 pt-4">
+                                                            <a href="#" class="btn pose-btn">Confirm</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+        								</div>	        								
+                                    </div>
+                                    
+                                    <div class="content-inner">
+                                        <div class="inner">
+                                            <div class="row pl-5">
+                                                <div class="col-md-3">
+                                                    <input type="radio" name="issue_with_delivery" onclick="someAll()" id="some_all" class="radio-button" />
+                                                    <label for="some_all" class="radio-button-click-target">
+                                                        <span class="radio-button-circle"></span>Some or all products on my invoice were missing
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <input type="radio" name="issue_with_delivery" id="receive_order" class="radio-button" />
+                                                    <label for="receive_order" class="radio-button-click-target">
+                                                        <span class="radio-button-circle"></span>I received an order or products by mistake
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <input type="radio" name="issue_with_delivery" id="received_incomplete" class="radio-button" />
+                                                    <label for="received_incomplete" class="radio-button-click-target">
+                                                        <span class="radio-button-circle"></span>I received an incomplete size run
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <input type="radio" name="issue_with_delivery" id="my_order" class="radio-button" />
+                                                    <label for="my_order" class="radio-button-click-target">
+                                                        <span class="radio-button-circle"></span>My order did not arrive within the delivery window
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- Some or all products on my invoice were missing -->
+                                            <div class="row p-5" id="toggle-some_all"  style="display:none">
+                                                <div class="col-md-3" style="background-color: #f5f5f5">
+                                                    <input type="radio" name="some_delivery_shipment" onclick="damaged()" id="damaged" class="radio-button" />
+                                                    <label for="damaged" class="radio-button-click-target">
+                                                        <span class="radio-button-circle"></span>Damaged/opened cartons having missing products
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-3" style="background-color: #f5f5f5">
+                                                    <input type="radio" name="some_delivery_shipment" onclick="undamaged()" id="undamaged" class="radio-button" />
+                                                    <label for="undamaged" class="radio-button-click-target">
+                                                        <span class="radio-button-circle"></span>Undamaged/unopened cartons having missing products
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-3" style="background-color: #f5f5f5">
+                                                    <input type="radio" name="some_delivery_shipment" onclick="missCartons()" id="miss_cartons" class="radio-button" />
+                                                    <label for="miss_cartons" class="radio-button-click-target">
+                                                        <span class="radio-button-circle"></span>There are missing cartons in a shipment delivery
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-3" style="background-color: #f5f5f5">
+                                                    <input type="radio" name="some_delivery_shipment" onclick="entireShipment()" id="entire_shipment" class="radio-button" />
+                                                    <label for="entire_shipment" class="radio-button-click-target">
+                                                        <span class="radio-button-circle"></span>An entire shipment was lost or not delivered
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Damaged/opened cartons having missing products -->
+                                            <div id="toggle-damaged" class="pl-5 pr-3" style="display:none">
+                                                <div class="row" style="width: 100%">
+                                                    <div class="col-md-6" style="background-color: #f5f5f5">
+                                                        <input type="radio" name="some_delivery_shipment_damaged" onclick="shipmentNike()" id="shipment_nike" class="radio-button" />
+                                                        <label for="shipment_nike" class="radio-button-click-target">
+                                                            <span class="radio-button-circle"></span>Shipment from the Nike warehouse
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-6" style="background-color: #f5f5f5">
+                                                        <input type="radio" name="some_delivery_shipment_damaged" onclick="directShipment()" id="direct_shipment" class="radio-button" />
+                                                        <label for="direct_shipment" class="radio-button-click-target">
+                                                            <span class="radio-button-circle"></span>Direct shipment from the factory
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="row pt-3 pr-5 pb-3" id="toggle-shipment_nike"  style="display:none">
+                                                    <div class="col-md-6">
+                                                        <h3 class="pb-2">CREDIT REQUEST</h3>
+                                                        <p>Missing products - shipping company issue - Nike warehouse shipment</p>
+                                                    </div>
+                                                    <div class="col-md-6 pt-3">
+                                                        <a href="#" class="btn pose-btn float-right">Confirm</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row pt-3 pr-5 pb-3" id="toggle-direct_shipment"  style="display:none">
+                                                    <div class="col-md-6">
+                                                        <h3 class="pb-2">CREDIT REQUEST</h3>
+                                                        <p>Missing products - shipping company issue - factory direct shipment</p>
+                                                    </div>
+                                                    <div class="col-md-6 pt-3">
+                                                        <a href="#" class="btn pose-btn float-right">Confirm</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Undamaged/unopened cartons having missing products -->
+                                            <div class="row pl-5 pb-3 pr-5" id="toggle-undamaged"  style="display:none">
+                                                <div class="col-md-6">
+                                                    <h3 class="pb-2">CREDIT REQUEST</h3>
+                                                    <p>Missing products - Nike warehouse error</p>
+                                                </div>
+                                                <div class="col-md-6 pt-4">
+                                                    <a href="#" class="btn pose-btn float-right">Confirm</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- There are missing cartons in a shipment delivery -->
+                                            <div class="row p-5" id="toggle-miss_cartons"  style="display:none">
+                                                <div class="col-md-3" style="background-color: #f5f5f5">
+                                                    <input type="radio" name="some_delivery_shipment_damaged" onclick="missCartonsShipment()" id="miss_cartons_shipment" class="radio-button" />
+                                                    <label for="miss_cartons_shipment" class="radio-button-click-target">
+                                                        <span class="radio-button-circle"></span>Shipment from the Nike warehouse
+                                                    </label>
+                                                </div>
+                                                <div class="col-md-3" style="background-color: #f5f5f5">
+                                                    <input type="radio" name="some_delivery_shipment_damaged" onclick="missCartonsDirect()" id="miss_cartons_direct" class="radio-button" />
+                                                    <label for="miss_cartons_direct" class="radio-button-click-target">
+                                                        <span class="radio-button-circle"></span>Direct shipment from the factory
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- Shipment from the Nike warehouse -->
+                                            <div class="row pl-5 pb-3 pr-5" id="toggle-miss_cartons_shipment"  style="display:none">
+                                                <div class="col-md-6">
+                                                    <h3 class="pb-2">CREDIT REQUEST</h3>
+                                                    <p>Missing products - shipping company issue - Nike warehouse shipment</p>
+                                                </div>
+                                                <div class="col-md-6 pt-4">
+                                                    <a href="#" class="btn pose-btn float-right">Confirm</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Shipment from the Nike warehouse -->
+                                            <div class="row pl-5 pb-3 pr-5" id="toggle-miss_cartons_direct"  style="display:none">
+                                                <div class="col-md-6">
+                                                    <h3 class="pb-2">CREDIT REQUEST</h3>
+                                                    <p>Missing products - shipping company issue - factory direct shipment</p>
+                                                </div>
+                                                <div class="col-md-6 pt-4">
+                                                    <a href="#" class="btn pose-btn float-right">Confirm</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- An entire shipment was lost or not delivered -->
+                                            <div class="row pl-5 pb-3 pr-5" id="toggle-entire_shipment"  style="display:none">
+                                                <div class="col-md-6">
+                                                    <h3 class="pb-2">CREDIT REQUEST</h3>
+                                                    <p>Lost/undelivered shipment</p>
+                                                </div>
+                                                <div class="col-md-6 pt-4">
+                                                    <a href="#" class="btn pose-btn float-right">Confirm</a>
+                                                </div>
+                                            </div>
+                                        </div>	        								
+                                    </div>
+
+
+                                    <div class="content-inner">
+                                        <div class="inner">
+                                                Issue with invoice3
+                                        </div>	        								
+                                    </div>
+                                    <div class="content-inner">
+                                        <div class="inner">
+                                                Issue with invoice4
+                                        </div>	        								
+                                    </div>
+                                </div>
+        					</div>
+        				</div>
+        			</div>
+                </div>
+                
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="pb-1">RECENT CLAIMS AND RETURNS</h2>
+                        <p class="pb-4">For requests created or submitted in the last 60 days.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="pb-3"><strong>UNSUBMITTED (0)</strong></h4>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>DATE</th>
+                                    <th>TYPE</th>
+                                    <th>CUSTOMER REFERENCE NUMBER</th>
+                                    <th>PRODUCTS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row pt-5">
+                    <div class="col-md-12">
+                        <h4 class="pb-3"><strong>SUBMITTED (0)</strong></h4>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>DATE</th>
+                                    <th>TYPE</th>
+                                    <th>NIKE NUMBER</th>
+                                    <th>CUSTOMER REFERENCE NUMBER</th>
+                                    <th>PRODUCTS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        	</div>
+        </section>
+        
+        <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="widget widget-link">
+                                <h3 class="white-text">GET IN TOUCH</h3>
+                                <ul>
+                                    <li><a class="white-text" href="#">Any questions? Let us know</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="widget widget-link link-login">
+                                <h3 class="white-text">CATEGORIES</h3>
+                                <ul>
+                                    <li><a class="white-text" href="#">Air Fresheners</a></li>
+                                    <li><a class="white-text" href="#">Standard</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="widget widget-link link-faq">
+                                <h3 class="white-text">LINKS</h3>
+                                <ul>
+                                    <li><a class="white-text" href="#">About Us</a></li>
+                                    <li><a class="white-text" href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="widget widget-link link-faq">
+                                <h3 class="white-text">HELP</h3>
+                                <ul>
+                                    <li><a href="#" class="white-text">Returns</a></li>
+                                    <li><a href="#" class="white-text">Terms and Conditions</a></li>
+                                    <li><a href="#" class="white-text">Privacy Policy</a></li>
+                                    <li><a href="#" class="white-text">Delivery Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="copyright text-center white-text">Copyright @2019 All rights reserved | Made with <i class="fa fa-heart"></i> By Posecom</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		<!-- Go Top -->
+	    <a class="go-top">
+	        <i class="fa fa-chevron-up"></i>
+	    </a>  
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/jquery.easing.js"></script>  
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/images-loaded.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/magnific.popup.min.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".test").click(function(){
+                $("#showme").show();
+            $("#divsthatIwanttohide").hide();
+
+            });
+
+        });
+    </script>
+</body> 
+</html>                               
