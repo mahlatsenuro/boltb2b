@@ -372,7 +372,7 @@ textarea {
 }
 
 input[type="checkbox"] {
-    display: inline;
+    display: inline !important;
 }
 
 textarea:-moz-placeholder,
@@ -3448,7 +3448,7 @@ article .more-link a:hover:after {
     -webkit-transition: transform 200ms ease-out;
     -moz-transition: transform 200ms ease-out;
   }
-  
+
   .accordion .item input[type="radio"][hidden="hidden"],
   .accordion .item input[type="checkbox"][hidden="hidden"] {
     visiblity: hidden;
@@ -3488,7 +3488,7 @@ article .more-link a:hover:after {
     -webkit-transition: padding 200ms ease-in-out;
     -moz-transition: padding 200ms ease-in-out;
   }
-  
+
 #toggle-equipment{
     display:none;
 }

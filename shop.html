@@ -15,7 +15,7 @@
     <style>
 
     </style>
-</head> 
+</head>
 <body class="header_sticky header-style-2 topbar-style-2 topbar-width-94 topbar-divider has-menu-extra">
     <div class="boxed">
     	<div id="site-header-wrap">
@@ -257,7 +257,7 @@
                                                 Equipment
                                             </label>
                                         </div>
-                                        
+
                                         <div id="toggle-equipment" style="display:none">
                                             <hr>
                                             <div class="form-check">
@@ -574,7 +574,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-check">
@@ -607,25 +607,27 @@
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input categories" type="checkbox" value="PLASTICWARE">
+                                            <input class="form-check-input" type="checkbox">
                                             <label class="form-check-label">
                                                 PLASTICWARE
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input id="KITCHENWARE" onclick="KITCHENWARE()" class="form-check-input KITCHENWARE" type="checkbox" value="KITCHENWARE">
+                                            <input id="KITCHENWARE" data-ids="KITCHENWARE" class="form-check-input cat_check" type="checkbox">
                                             <label class="form-check-label">
                                                 KITCHENWARE
                                             </label>
                                         </div>
-                                        <div id="toggle-KITCHENWARE" style="display:none">
+
+                                        <div class="cats" id="KITCHENWARE" style="display:none">
                                             <div class="form-check pl-3">
-                                                <input id="PREPTOOLS" onclick="PREPTOOLS()" class="form-check-input PREPTOOLS" type="checkbox" value="PREP TOOLS">
+                                                <input class="form-check-input sub_cat_check" id="PREPTOOLS" data-sub-ids="PREPTOOLS" type="checkbox">
                                                 <label class="form-check-label font-14">
                                                     PREP TOOLS
                                                 </label>
                                             </div>
-                                            <div id="toggle-PREPTOOLS" style="display:none">
+
+                                            <div class="sub_cats" id="PREPTOOLS" style="display:none">
                                                 <div class="form-check pl-4">
                                                     <input class="form-check-input PREPTOOLS" type="checkbox" value="SERVING SPOONS & UTENSILS">
                                                     <label class="form-check-label font-14">
@@ -636,18 +638,6 @@
                                                     <input class="form-check-input PREPTOOLS" type="checkbox" value="PEELERS & OPENERS">
                                                     <label class="form-check-label font-14">
                                                         PEELERS & OPENERS
-                                                    </label>
-                                                </div>
-                                                <div class="form-check pl-4">
-                                                    <input class="form-check-input PREPTOOLS" type="checkbox" value="SCISSORS & SHEARS">
-                                                    <label class="form-check-label font-14">
-                                                        SCISSORS & SHEARS
-                                                    </label>
-                                                </div>
-                                                <div class="form-check pl-4">
-                                                    <input class="form-check-input PREPTOOLS" type="checkbox" value="MEASURING JUGS">
-                                                    <label class="form-check-label font-14">
-                                                        MEASURING JUGS
                                                     </label>
                                                 </div>
                                             </div>
@@ -706,7 +696,7 @@
                                     <input id="PRICE" type="radio" name="accordion" hidden="hidden"/>
                                     <label class="menulabel" for="PRICE">PRICE</label>
                                     <div class="acoordion-content">
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -749,7 +739,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <ul id="shop" class="product style2 sd1 shop">
                                 <li data-category="formal"
                                     data-style="circle"
@@ -1185,5 +1175,5 @@
     <script src="js/magnific.popup.min.js"></script>
     <script src="js/jquery.hoverdir.js"></script>
     <script src="js/main.js"></script>
-</body> 
+</body>
 </html>                               

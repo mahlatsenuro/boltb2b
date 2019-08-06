@@ -90,12 +90,12 @@
                 $(".countdown").countdown('2018/6/22', function(event) {
                   $(this).html(event.strftime(before + '%D' + text + 'Days</div></div>' + before + '%H' + text + 'Hours</div></div>' + before + '%M' + text + 'Minutes</div></div>' + before + '%S' + text + 'Seconds</div>'));
                 });
-            }      
+            }
     };
 
-    var flatCounter = function() {       
-        $('.flat-counter').on('on-appear', function() {             
-            $(this).find('.numb-count').each(function() { 
+    var flatCounter = function() {
+        $('.flat-counter').on('on-appear', function() {
+            $(this).find('.numb-count').each(function() {
                 var to = parseInt( ($(this).attr('data-to')),10 ), speed = parseInt( ($(this).attr('data-speed')),10 );
                 if ( $().countTo ) {
                     $(this).countTo({
@@ -105,7 +105,7 @@
                 }
             });
        });
-    }; 
+    };
 
     var googleMap = function () {
         // gmap default
@@ -353,9 +353,9 @@
           } else {
               $('.go-top').removeClass('show');
           }
-      }); 
+      });
 
-      $('.go-top').on('click', function() {            
+      $('.go-top').on('click', function() {
           $("html, body").animate({ scrollTop: 0 }, 1000 , 'easeInOutExpo');
           return false;
       });
@@ -368,12 +368,12 @@
       }
     };
 
-    var removePreloader = function() {        
+    var removePreloader = function() {
         $(window).on("load", function () {
             $(".loader").fadeOut();
             $("#loading-overlay").delay(500).fadeOut('slow',function(){
             $(this).remove();
-            }); 
+            });
       });
     };
 
@@ -417,11 +417,11 @@
     };
 
     var topSearch = function () {
-        $(document).on('click', function(e) {   
-            var clickID = e.target.id;   
+        $(document).on('click', function(e) {
+            var clickID = e.target.id;
             if ( ( clickID !== 'input-search' ) ) {
-                $('.top-search').removeClass('show');                
-            } 
+                $('.top-search').removeClass('show');
+            }
         });
 
         $('.search').on('click', function(event){
@@ -430,26 +430,26 @@
 
         $('.search-form').on('click', function(event){
             event.stopPropagation();
-        });        
+        });
 
         $('.search').on('click', function (event) {
             if(!$('.top-search').hasClass( "show" )) {
-                $('.top-search').addClass('show');  
-                event.preventDefault();                
+                $('.top-search').addClass('show');
+                event.preventDefault();
             }
-                
+
             else
                 $('.top-search').removeClass('show');
                 event.preventDefault();
 
-        }); 
+        });
         $('.top-search .close').on('click', function(event){
             if($('.top-search').hasClass( "show" )) {
-                $('.top-search').removeClass('show');  
-                event.preventDefault();                
+                $('.top-search').removeClass('show');
+                event.preventDefault();
             }
-        });        
-  
+        });
+
     };
 
     var flexProduct = function() {
@@ -457,7 +457,7 @@
             animation: "slide",
             controlNav: "thumbnails"
         });
-    }; 
+    };
 
     var quantityNumber = function(){
         $('.quantity-button').on('click', function(){
@@ -544,7 +544,7 @@
                 });
             });
 
-            $('.flat-filter li').on('click',function() {                           
+            $('.flat-filter li').on('click',function() {
                 var selector = $(this).find("a").attr('data-filter');
                 $('.flat-filter li').removeClass('active');
                 $(this).addClass('active');
@@ -552,7 +552,7 @@
                 return false;
             });
         };
-    }; 
+    };
 
     var flatCarouselOwl = function() {
         if ( $().owlCarousel ) {
@@ -589,11 +589,11 @@
     };
 
     var searchIcon = function () {
-        $(document).on('click', function(e) {   
-            var clickID = e.target.id;   
+        $(document).on('click', function(e) {
+            var clickID = e.target.id;
             if ( ( clickID !== 'input-search' ) ) {
-                $('.header-search-form').removeClass('show');                
-            } 
+                $('.header-search-form').removeClass('show');
+            }
         });
 
         $('.header-search-icon').on('click', function(event){
@@ -602,21 +602,21 @@
 
         $('.header-search-form').on('click', function(event){
             event.stopPropagation();
-        });        
+        });
 
         $('.header-search-icon').on('click', function (event) {
             if(!$('.header-search-form').hasClass( "show" )) {
-                $('.header-search-form').addClass('show'); 
-                event.preventDefault();                
+                $('.header-search-form').addClass('show');
+                event.preventDefault();
             }
-                
+
             else
                 $('.header-search-form').removeClass('show');
                 event.preventDefault();
 
-        });     
-  
-    };  
+        });
+
+    };
 
     var headerFixed = function(){
         if($('body').hasClass('header_sticky')){
@@ -710,7 +710,7 @@
 
 
 
-        $('.mobile-button').on('click', function() {         
+        $('.mobile-button').on('click', function() {
 
             $('#mainnav-mobi').slideToggle(300);
 
@@ -779,8 +779,8 @@
         function activeLayout () {
             $(".switcher-container" ).on( "click", "a.sw-light", function() {
                 $(this).toggleClass( "active" );
-                $('body').addClass('home-boxed');  
-                $('body').css({'background': '#f6f6f6' });                
+                $('body').addClass('home-boxed');
+                $('body').css({'background': '#f6f6f6' });
                 $('.sw-pattern.pattern').css ({ "top": "100%", "opacity": 1, "z-index": "10"});
             }).on( "click", "a.sw-dark", function() {
                 $('.sw-pattern.pattern').css ({ "top": "98%", "opacity": 0, "z-index": "-1"});
@@ -788,8 +788,8 @@
                 $('body').removeClass('home-boxed');
                 $('body').css({'background': '#fff' });
                 return false;
-            })       
-        }        
+            })
+        }
 
         function activePattern () {
             $('.sw-pattern').on('click', function () {
@@ -800,15 +800,15 @@
             })
         }
 
-        activeLayout(); 
+        activeLayout();
         activePattern();
-    }; 
-    
+    };
+
    	// Dom Ready
 	$(function() {
       removePreloader();
       goTop();
-      parallax(); 
+      parallax();
       flatRetinaLogo();
       searchIcon();
       headerFixed();
@@ -819,15 +819,15 @@
       countDown();
       flatCounter();
       googleMap();
-      flatPrice();  
-      flatFilterBox(); 
+      flatPrice();
+      flatFilterBox();
       flatShopSearch();
       topSearch();
-      flexProduct(); 
-      quantityNumber(); 
+      flexProduct();
+      quantityNumber();
       flatTabs();
       flatImagePopup();
-      flatVideoPopup(); 
+      flatVideoPopup();
       flatEffectDir();
       flatIsotope();
       flatCarouselOwl();
@@ -864,7 +864,7 @@ document.querySelectorAll(".color").forEach(
     (elm)=> {elm.addEventListener("change",choosedagnat);}
 );
 
-function choosedagnat(){ 
+function choosedagnat(){
     mixer.filter("." + this.value);
 }
 
@@ -925,3 +925,27 @@ function Footwear() {
        text.style.display = "none";
     }
 }
+
+$('.cat_check').change(function(){
+    if($('.cat_check:checked').length==0){
+        $('.cats').hide();
+    }else{
+        $('.cats').show();
+        $('.cat_check:checked').each(function(){
+            $('#'+$(this).attr('data-ids')).hide();
+        });
+    }
+
+});
+
+$('.sub_cat_check').change(function(){
+    if($('.sub_cat_check:checked').length==0){
+        $('.sub_cats').hide();
+    }else{
+        $('.sub_cats').show();
+        $('.sub_cat_check:checked').each(function(){
+            $('#'+$(this).attr('data-sub-ids')).hide();
+        });
+    }
+
+});
