@@ -1,32 +1,3 @@
-/**
-  * isMobile
-  * flatRetinaLogo
-  * flatAccordion
-  * countDown
-  * flatCounter
-  * goTop
-  * parallax
-  * removePreloader
-  * flatPrice
-  * flatFilterBox
-  * flatShopSearch
-  * topSearch
-  * flexProduct
-  * quantityNumber
-  * flatTabs
-  * flatImagePopup
-  * flatVideoPopup
-  * flatEffectDir
-  * flatIsotope
-  * flatCarouselOwl
-  * searchIcon
-  * headerFixed
-  * responsiveMenu
-  * flatEqualHeight
-  * flatContentBox
-  * swClick
-*/
-
 ;(function($) {
 
    'use strict'
@@ -838,13 +809,74 @@
 
 function someAll() {
     var checkBox = document.getElementById("some_all");
-    var text = document.getElementById("toggle-some_all");
+    var some_all = document.getElementById("toggle-some_all");
+    var receive_order = document.getElementById("toggle-receive_order");
+    var receivedShipment = document.getElementById("toggle-receivedShipment");
+    var incompleteSizeRun = document.getElementById("toggle-incompleteSizeRun");
+    var orderNotArrive = document.getElementById("toggle-orderNotArrive");
+    
     if (checkBox.checked == true){
-      text.style.display = "-webkit-inline-box";
+        some_all.style.display = "-webkit-inline-box";
+        receive_order.style.display = "none";
+        receivedShipment.style.display = "none";
+        incompleteSizeRun.style.display = "none";
+        orderNotArrive.style.display = "none";
     } else {
-       text.style.display = "none";
+        some_all.style.display = "none";
     }
 }
+
+function receivedOrderMistake() {
+    var checkBox = document.getElementById("receive_order");
+    var receive_order = document.getElementById("toggle-receive_order");
+    var some_all = document.getElementById("toggle-some_all");
+    var incompleteSizeRun = document.getElementById("toggle-incompleteSizeRun");
+    var orderNotArrive = document.getElementById("toggle-orderNotArrive");
+
+    if (checkBox.checked == true){
+        receive_order.style.display = "-webkit-inline-box";
+        some_all.style.display = "none";
+        incompleteSizeRun.style.display = "none";
+        orderNotArrive.style.display = "none";
+    } else {
+        receive_order.style.display = "none";
+    }
+}
+
+function incompleteSizeRun() {
+    var checkBox = document.getElementById("incompleteSizeRun");
+    var incompleteSizeRun = document.getElementById("toggle-incompleteSizeRun");
+    var some_all = document.getElementById("toggle-some_all");
+    var receive_order = document.getElementById("toggle-receive_order");
+    var orderNotArrive = document.getElementById("toggle-orderNotArrive");
+
+    if (checkBox.checked == true){
+        incompleteSizeRun.style.display = "flex";
+        some_all.style.display = "none";
+        receive_order.style.display = "none";
+        orderNotArrive.style.display = "none";
+    } else {
+        incompleteSizeRun.style.display = "none";
+    }
+}
+
+function orderNotArrive() {
+    var checkBox = document.getElementById("orderNotArrive");
+    var orderNotArrive = document.getElementById("toggle-orderNotArrive");
+    var some_all = document.getElementById("toggle-some_all");
+    var receive_order = document.getElementById("toggle-receive_order");
+    var incompleteSizeRun = document.getElementById("toggle-incompleteSizeRun");
+
+    if (checkBox.checked == true){
+        orderNotArrive.style.display = "block";
+        some_all.style.display = "none";
+        receive_order.style.display = "none";
+        incompleteSizeRun.style.display = "none";
+    } else {
+        incompleteSizeRun.style.display = "none";
+    }
+}
+
 
 function damaged() {
     var checkBox = document.getElementById("damaged");
@@ -852,11 +884,15 @@ function damaged() {
     var undamaged = document.getElementById("toggle-undamaged");
     var entire_shipment = document.getElementById("toggle-entire_shipment");
     var miss_cartons = document.getElementById("toggle-miss_cartons"); 
+    var miss_cartons_shipment = document.getElementById("toggle-miss_cartons_shipment");
+    var miss_cartons_direct = document.getElementById("toggle-miss_cartons_direct");
     if (checkBox.checked == true){
       text.style.display = "block";
       undamaged.style.display = "none";
       entire_shipment.style.display = "none";
       miss_cartons.style.display = "none";
+      miss_cartons_shipment.style.display = "none";
+      miss_cartons_direct.style.display = "none";
     } else {
        text.style.display = "none";
     }
@@ -878,9 +914,11 @@ function directShipment() {
     var checkBox = document.getElementById("direct_shipment");
     var direct_shipment = document.getElementById("toggle-direct_shipment");
     var shipment_nike = document.getElementById("toggle-shipment_nike");
+    var miss_cartons = document.getElementById("toggle-miss_cartons"); 
     if (checkBox.checked == true){
         direct_shipment.style.display = "flex";
         shipment_nike.style.display = "none";
+        miss_cartons.style.display = "none";
     } else {
        text.style.display = "none";
     }
@@ -892,11 +930,15 @@ function undamaged() {
     var damaged = document.getElementById("toggle-damaged");
     var entire_shipment = document.getElementById("toggle-entire_shipment");
     var miss_cartons = document.getElementById("toggle-miss_cartons"); 
+    var miss_cartons_shipment = document.getElementById("toggle-miss_cartons_shipment");
+    var miss_cartons_direct = document.getElementById("toggle-miss_cartons_direct");
     if (checkBox.checked == true){
         undamaged.style.display = "flex";
         damaged.style.display = "none";
         entire_shipment.style.display = "none";
         miss_cartons.style.display = "none";
+        miss_cartons_shipment.style.display = "none";
+        miss_cartons_direct.style.display = "none";
     } else {
        text.style.display = "none";
     }
@@ -910,7 +952,7 @@ function missCartons() {
     var undamaged = document.getElementById("toggle-undamaged");
     miss_cartons_direct 
     if (checkBox.checked == true){
-        miss_cartons.style.display = "block";
+        miss_cartons.style.display = "flex";
         entire_shipment.style.display = "none";
         damaged.style.display = "none";
         undamaged.style.display = "none";
@@ -923,9 +965,15 @@ function missCartonsShipment() {
     var checkBox = document.getElementById("miss_cartons_shipment");
     var miss_cartons_shipment = document.getElementById("toggle-miss_cartons_shipment");
     var miss_cartons_direct = document.getElementById("toggle-miss_cartons_direct");
+    var entire_shipment = document.getElementById("toggle-entire_shipment");
+    var damaged = document.getElementById("toggle-damaged");
+    var undamaged = document.getElementById("toggle-undamaged");
     if (checkBox.checked == true){
-        miss_cartons_shipment.style.display = "block";
+        miss_cartons_shipment.style.display = "flex";
         miss_cartons_direct.style.display = "none";
+        entire_shipment.style.display = "none";
+        damaged.style.display = "none";
+        undamaged.style.display = "none";
     } else {
        text.style.display = "none";
     }
@@ -935,9 +983,15 @@ function missCartonsDirect() {
     var checkBox = document.getElementById("miss_cartons_direct");
     var miss_cartons_direct = document.getElementById("toggle-miss_cartons_direct");
     var miss_cartons_shipment = document.getElementById("toggle-miss_cartons_shipment");
+    var entire_shipment = document.getElementById("toggle-entire_shipment");
+    var damaged = document.getElementById("toggle-damaged");
+    var undamaged = document.getElementById("toggle-undamaged");
     if (checkBox.checked == true){
-        miss_cartons_direct.style.display = "block";
+        miss_cartons_direct.style.display = "flex";
         miss_cartons_shipment.style.display = "none";
+        entire_shipment.style.display = "none";
+        damaged.style.display = "none";
+        undamaged.style.display = "none";
     } else {
        text.style.display = "none";
     }
@@ -949,12 +1003,110 @@ function entireShipment() {
     var damaged = document.getElementById("toggle-damaged");
     var undamaged = document.getElementById("toggle-undamaged");
     var miss_cartons = document.getElementById("toggle-miss_cartons"); 
+    var miss_cartons_direct = document.getElementById("toggle-miss_cartons_direct");
+    var miss_cartons_shipment = document.getElementById("toggle-miss_cartons_shipment");
     if (checkBox.checked == true){
-        entire_shipment.style.display = "block";
+        entire_shipment.style.display = "flex";
         damaged.style.display = "none";
         undamaged.style.display = "none";
         miss_cartons.style.display = "none";
+        miss_cartons_direct.style.display = "none";
+        miss_cartons_shipment.style.display = "none";
     } else {
         entire_shipment.style.display = "none";
+    }
+}
+
+function receivedShipment() {
+    var checkBox = document.getElementById("receivedShipment");
+    var receivedShipment = document.getElementById("toggle-receivedShipment");
+    var cancelledOrder = document.getElementById("toggle-cancelledOrder");
+    var receivedDuplicates = document.getElementById("toggle-receivedDuplicates");
+    var receiveProductsMatch = document.getElementById("toggle-receiveProductsMatch");
+
+    if (checkBox.checked == true){
+        receivedShipment.style.display = "flex";
+        cancelledOrder.style.display = "none";
+        receivedDuplicates.style.display = "none";
+        receiveProductsMatch.style.display = "none";
+    } else {
+        receivedShipment.style.display = "none";
+    }
+}
+
+function cancelledOrder() {
+    var checkBox = document.getElementById("cancelledOrder");
+    var cancelledOrder = document.getElementById("toggle-cancelledOrder");
+    var receivedShipment = document.getElementById("toggle-receivedShipment");
+    var receivedDuplicates = document.getElementById("toggle-receivedDuplicates");
+    var receiveProductsMatch = document.getElementById("toggle-receiveProductsMatch");
+
+    if (checkBox.checked == true){
+        cancelledOrder.style.display = "flex";
+        receivedShipment.style.display = "none";
+        receivedDuplicates.style.display = "none";
+        receiveProductsMatch.style.display = "none";
+    } else {
+        cancelledOrder.style.display = "none";
+    }
+}
+
+function receivedDuplicates() {
+    var checkBox = document.getElementById("receivedDuplicates");
+    var receivedDuplicates = document.getElementById("toggle-receivedDuplicates");
+    var receivedShipment = document.getElementById("toggle-receivedShipment");
+    var cancelledOrder = document.getElementById("toggle-cancelledOrder");
+    var receiveProductsMatch = document.getElementById("toggle-receiveProductsMatch");
+
+    if (checkBox.checked == true){
+        receivedDuplicates.style.display = "flex";
+        receivedShipment.style.display = "none";
+        cancelledOrder.style.display = "none";
+        receiveProductsMatch.style.display = "none";
+    } else {
+        receivedDuplicates.style.display = "none";
+    }
+}
+
+function receiveProductsMatch() {
+    var checkBox = document.getElementById("receiveProductsMatch");
+    var receiveProductsMatch = document.getElementById("toggle-receiveProductsMatch");
+    var receivedShipment = document.getElementById("toggle-receivedShipment");
+    var cancelledOrder = document.getElementById("toggle-cancelledOrder");
+    var receivedDuplicates = document.getElementById("toggle-receivedDuplicates");
+
+    if (checkBox.checked == true){
+        receiveProductsMatch.style.display = "flex";
+        receivedShipment.style.display = "none";
+        cancelledOrder.style.display = "none";
+        receivedDuplicates.style.display = "none";
+    } else {
+        receiveProductsMatch.style.display = "none";
+    }
+}
+
+function orderArrivedEarly() {
+    var checkBox = document.getElementById("orderArrivedEarly");
+    var orderArrivedEarly = document.getElementById("toggle-orderArrivedEarly");
+    var orderArrivedLate = document.getElementById("toggle-orderArrivedLate");
+
+    if (checkBox.checked == true){
+        orderArrivedEarly.style.display = "flex";
+        orderArrivedLate.style.display = "none";
+    } else {
+        orderArrivedEarly.style.display = "none";
+    }
+}
+
+function orderArrivedLate() {
+    var checkBox = document.getElementById("orderArrivedLate");
+    var orderArrivedLate = document.getElementById("toggle-orderArrivedLate");
+    var orderArrivedEarly = document.getElementById("toggle-orderArrivedEarly");
+
+    if (checkBox.checked == true){
+        orderArrivedLate.style.display = "flex";
+        orderArrivedEarly.style.display = "none";
+    } else {
+        orderArrivedLate.style.display = "none";
     }
 }
